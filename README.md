@@ -1,35 +1,38 @@
-# BWT_NEURAL-KNIGHTS
 AI SUPER PRODUCTIVITY TOOLS
 
-SAHA – Responsible Digital Companion
+SAHA – AI Context Recovery Companion
 
 Solution Overview:
-    Saha is a web-based responsible AI companion designed to address two critical challenges in modern student workflows: blind trust in AI-generated outputs and increasing digital attention fragmentation. Students frequently rely on intelligent tools for assignments, research, and productivity without understanding output reliability, uncertainty, or hallucination risk. At the same time, constant context switching and repeated tool interactions reduce focus and independent reasoning. Saha introduces a structured transparency and behavioral-awareness layer on top of AI-assisted generation. Instead of replacing thinking, the system augments user awareness by evaluating generated responses through a secondary analysis layer and monitoring interaction patterns to promote mindful, informed usage. The platform is designed to enhance productivity while reinforcing ethical and responsible AI engagement.
+Saha is a web-based AI productivity layer designed to solve a critical problem faced by modern developers: productivity loss caused by interruptions, context switching, and workflow fragmentation. Developers frequently lose time trying to understand where they left off, re-reading unfamiliar code, reconstructing logic flow, and rewriting repetitive boilerplate. These interruptions create cognitive reset costs that reduce efficiency and increase frustration. Saha introduces an intelligent context recovery and workflow restoration system layered on top of development tasks. Instead of replacing developers, the system accelerates re-engagement by analyzing code structure, summarizing logic, identifying recent changes, and generating structured scaffolding where needed. The platform is designed to reduce friction, restore clarity, and help developers resume meaningful work faster after interruptions.
 
 Core Features:
-   AI Transparency Engine – After content generation, the system applies a secondary AI-driven self-evaluation prompt to analyze uncertainty, assumptions, structural coherence, and potential hallucination risk. It generates a confidence indicator, reliability summary, and uncertainty assessment before presenting the final output to the user.
 
-   Distraction Guardian – Tracks user interaction signals such as rapid consecutive requests, tool-switch frequency, repeated regeneration attempts, and inactivity intervals. Using rule-based behavioral inference, it estimates distraction likelihood and provides contextual nudges to encourage focus restoration without enforcing restrictive blocking mechanisms.
+Context Recovery Engine – When a developer returns to a file or project, the system analyzes the codebase structure, summarizes functional components, highlights key logic flows, and identifies recently modified or critical sections. It generates a structured “Where You Left Off” summary to reduce cognitive reloading time.
 
+Code Explanation Module – Provides simplified breakdowns of unfamiliar files, functions, and dependencies. It analyzes relationships between components and presents readable explanations to help developers quickly understand logic without manually tracing through large code blocks.
+
+Smart Boilerplate Generator – Generates repetitive scaffolding such as API routes, structured templates, class skeletons, or configuration patterns. It reduces time spent writing repetitive foundational code and ensures consistency.
+
+Focus Restoration Support – Detects repeated context resets, idle return sessions, or multiple file re-open events. It provides structured recovery prompts to help developers quickly regain workflow continuity without enforcing restrictive controls.
 
 Extended Capabilities (Future Scope):
 
-• Notes Summarizer
-• Purpose-Based Structured Generator
-• Resume Structuring Assistant
-• Assignment Guidance Module
-• Focus Trend Analytics
-• AI Dependency Insights
+• Git Commit Context Analyzer
+• IDE Plugin Integration
+• Real-Time Context Snapshotting
+• Developer Productivity Metrics Dashboard
+• Workflow Pattern Insights
+• Intelligent Task Resumption Suggestions
 
 Architecture:
-     Saha follows a modular full-stack web architecture designed for scalability, transparency evaluation, and behavioral monitoring. The frontend is implemented using Next.js to provide a responsive, interactive dashboard where users submit prompts and view evaluated outputs. The backend processes generation requests through structured API routes, integrates with a language model API for primary content generation, and applies a secondary evaluation pipeline for transparency scoring. Supabase is used as a persistent data layer to store session metadata, behavioral logs, and interaction metrics. The system separates generation and evaluation stages to ensure transparency logic remains independent from content creation, improving explainability and system integrity.
+Saha follows a modular full-stack web architecture optimized for context analysis, structured explanation, and workflow restoration. The frontend is implemented using Next.js to provide an interactive developer dashboard where users submit code snippets or connect project files and receive structured recovery insights. The backend processes input through organized API routes, integrates with a language model API for code summarization and structured explanation, and applies an independent recovery-analysis pipeline to generate contextual insights. Supabase functions as a persistent data layer for storing session activity, interaction logs, file summaries, and recovery metadata. The system separates context analysis from generation logic to maintain modularity, clarity, and scalability.
 
 Architecture Components
 
-• Frontend – Next.js (React) with Tailwind CSS for responsive interface and transparency indicators
-• Backend API Layer – Handles prompt processing, AI calls, transparency evaluation pipeline, and distraction logic
-• Transparency Module – Secondary AI self-evaluation and rule-based uncertainty detection
-• Behavior Monitoring Module – Session-based interaction logging and distraction inference logic
-• Database – Supabase for storing user sessions, request logs, timestamps, and behavioral metrics
-• AI Integration – External language model API for generation and structured evaluation
+• Frontend – Next.js (React) with Tailwind CSS for structured dashboards, recovery summaries, and explanation panels
+• Backend API Layer – Handles code parsing requests, AI calls, recovery summary generation, and focus restoration logic
+• Context Recovery Module – Code summarization, logic flow extraction, and “where you left off” analysis
+• Explanation Engine – Structured breakdown of unfamiliar code blocks and dependency mapping
+• Database – Supabase for session logs, recovery metadata, and developer interaction tracking
+• AI Integration – External language model API for summarization, explanation, and boilerplate generation
 • Deployment – Vercel for scalable serverless deployment
